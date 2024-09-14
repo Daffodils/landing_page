@@ -1,0 +1,139 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Coffee Landing Page</title>  
+    <link rel="stylesheet" href="styles.css">  
+    <script src="https://cdn.tailwindcss.com"></script>  
+    <style>  
+        body {  
+            margin: 0;  
+            font-family: 'poppins', sans-serif;  
+            scroll-behavior: smooth;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <nav id="navbar" class="bg-transparent">  
+        <div class="container mx-auto flex justify-between">  
+            <div class="text-xl font-size: 20px; font-bold">Coffee Lovers</div>  
+            <div>  
+                <a href="#section1">Home</a>  
+                <a href="#section2">About</a>  
+                <a href="#section3">Menu</a>  
+                <a href="#section4">Contact</a>  
+            </div>  
+        </div>  
+    </nav>  
+    <div id="section1" class="gradient-bg font-serif" >  
+        <!-- <div id="section1" class="text gradient-bg font-poppins" ></div> -->
+        <h1>Welcome to Coffee Lovers. </h1> 
+        <!-- <h1>Coffee Lovers.</h1> -->
+        <!-- <h2>Coffee Lovers.</h2> -->
+    </div>  
+    <section id="section2" class="bg-200"> 
+         
+        <h2 class="section-tittle" text-maroon-300 ><strong>About Us</strong></h2>
+        <br><br><br>
+        <p>     At Coffee Lovers, we believe that coffee is more than just a drink; it's a way to 
+            connect with friends, family, and the world around us. Our mission is to provide the
+            highest quality coffee sourced from sustainable farms, ensuring every cup is a 
+            delightful experience. Join us in our cozy café where every sip tells a story.</p> 
+    </section>  
+
+    <section id="coffee-code-stories" class="bg-brown-900">
+        <h2 class="section-title">Coffee & Code Stories</h2>
+        <div class="stories-container">
+            <div class="story-card">
+                <h3>From Beans to Binary: A Developer’s Journey</h3>
+                <p>Learn how a passion for coffee inspired a career in software development. Discover the parallels between brewing the perfect cup and writing flawless code.</p>
+                <button class="cta-button">Read More</button>
+            </div>
+            <div class="story-card">
+                <h3>Coding Over Coffee: A Daily Ritual</h3>
+                <p>Explore how developers across the globe start their day with a cup of coffee and a fresh set of code challenges. Morning routines that boost productivity.</p>
+                <button class="cta-button">Read More</button>
+            </div>
+            <!-- Add more stories as needed -->
+        </div>
+    </section>
+    
+    <section id="coding-challenges" class="bg-brown-900">
+        <h2 class="section-title">Coding Challenges</h2>
+        <div class="challenges-container">
+            <div class="challenge-card">
+                <h3>Java Jolt: Sort a List</h3>
+                <p>Write a function that sorts a list of coffee shop names alphabetically. Can you do it before your coffee gets cold?</p>
+                <button class="cta-button">Take the Challenge</button>
+            </div>
+            <div class="challenge-card">
+                <h3>Espresso Express: Debug the Code</h3>
+                <p>Find the bug in this espresso-themed code snippet. A quick challenge to get your coding brain buzzing!</p>
+                <button class="cta-button">Take the Challenge</button>
+            </div>
+            <!-- Add more challenges as needed -->
+        </div>
+    </section>
+    
+
+    <section id="section3" class="bg-gray-300">  
+        <h2 class="section-tittle" text-maroon-200><strong>Our Menu</strong></h2>
+        <br><br><br><div class="cards-container">
+            <div class="card">
+                <img src="coffee1.jpg" alt="Espresso" class="card-img">
+                <div class="card-body">
+                    <h3>Espresso</h3>
+                    <p>Strong and rich, a perfect start to your day.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="coffee2.jpg" alt="Latte" class="card-img">
+                <div class="card-body">
+                    <h3>Latte</h3>
+                    <p>Smooth and creamy, a delightful blend of espresso and steamed milk.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="coffee3.jpg" alt="Cappuccino" class="card-img">
+                <div class=" text-maroon card-body">
+                    <h3>Cappuccino</h3>
+                    <p>Bold espresso topped with a light, frothy layer of milk.</p>
+                </div>
+            </div>
+        </div>
+        <blockquote class="menu-quotes" >  
+            <p>"Coffee is a language in itself." – Jackie Chan</p> 
+            <br> 
+            <p>"Life is too short for bad coffee." – Unknown</p>  
+            <footer>- Coffee Lovers</footer>  
+        </blockquote>
+    </section>  
+    <section id="section4" class="bg-gray-400">  
+        <h2 class="section-tittle"><strong>Contact Us</strong></h2>
+        <br>
+        <!-- <h3 class="gap">    </h3> -->
+         <p class="text-black-200 text-size 90"><strong>    |   |   </strong></p>
+        <p>We'd love to hear from you! Reach out through the following:</p>  
+        <p><strong>Address:</strong> 123 Coffee Lane, Brewtown, CA 12345</p>  
+        <p><strong>Phone:</strong> (123) 456-7890</p>  
+        <p><strong>Email:</strong> info@coffeelovers.com</p>  
+        <p><strong>Follow us on social media:</strong></p>  
+        <p>  
+            <a href="#" class="text-blue-500">Facebook</a> |  
+            <a href="#" class="text-blue-500">Instagram</a> |  
+            <a href="#" class="text-blue-500">Twitter</a>  
+        </p> 
+    </section>  
+    <script>  
+        window.addEventListener('scroll', function() {  
+            const navbar = document.getElementById('navbar');  
+            if (window.scrollY > 50) {  
+                navbar.classList.add('scrolled');  
+            } else {  
+                navbar.classList.remove('scrolled');  
+            }  
+        });  
+    </script>  
+</body>  
+</html>
